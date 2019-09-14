@@ -1,0 +1,16 @@
+server:
+  port: 8100
+#此处需要加上该服务的名字
+spring:
+  application:
+    name: eureka-client
+
+eureka:
+  client:
+    #向注册中心注册自己，此处默认为true，可以不用加的，但为了教学解释
+    registerWithEureka: true
+    #让注册中心发现自己，默认也为true，可以不用加的，但为了教学解释
+    fetchRegistry: true
+    #设置服务注册中心的URL，注册中心已经设置过了，直接去注册中心查看即可。
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8000/eureka/
