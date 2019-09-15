@@ -8,6 +8,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
+//RestTemplate+Ribbon去消费服务
 @SpringBootApplication
 @EnableEurekaClient
 @EnableDiscoveryClient //向服务中心注册
