@@ -3,6 +3,10 @@ server:
 spring:
   application:
     name: eureka-feign
+#开启hystrix断路器
+feign:
+  hystrix:
+    enabled: true
 #服务注册中心
 eureka:
   client:
