@@ -1,0 +1,10 @@
+server:
+  port: 8201
+spring:
+  application:
+    name: eureka-feign
+#服务注册中心
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8000/eureka/
